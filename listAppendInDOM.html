@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic List Example</title>
+</head>
+<body>
+
+<h2 id="listTitle">Shopping List</h2>
+<ul id="myList">
+  <li>Apples</li>
+  <li>Bananas</li>
+  <li>Oranges</li>
+</ul>
+
+<button onclick="updateList()">Update List</button>
+
+<script>
+// create function 
+function updateList(){
+    //getting the elements 
+    let titleElement = document.getElementById('listTitle');
+    let listElement = document.getElementById('myList');
+
+    //update list title 
+    titleElement.innerText="Updated shopping list";
+
+    //create new li items 
+    let newItemOne = document.createElement('li');
+    let newItemTwo = document.createElement('li');
+
+    //Set the text content of the new elements 
+    //because at this point all we have is <li></li>
+
+    newItemOne.textContent='Grapes';
+    newItemTwo.textContent='Milk';
+
+    /*
+        The most important part, is to add the element 
+        to the parent 
+    */
+ 
+    listElement.appendChild(newItemOne);
+    listElement.appendChild(newItemTwo);
+
+}
+</script>
+
+</body>
+</html>
