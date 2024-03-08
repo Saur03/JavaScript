@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Page Elements</title>
+</head>
+<body>
+
+  <h1>Welcome to the Dynamic Page</h1>
+
+  <form id="elementForm">
+    <label for="elementType">Select Element Type:</label>
+    <select id="elementType">
+      <option value="paragraph">Paragraph</option>
+      <option value="heading">Heading</option>
+      <option value="button">Button</option>
+    </select>
+
+    <label for="elementContent">Element Content:</label>
+    <input type="text" id="elementContent" placeholder="Enter content...">
+
+    <button type="button" onclick="addElement()">Add Element</button>
+    <button type="button" onclick="removeElement()">remove Element</button>
+    <button type="button" onclick="clearForm()">Clear</button>
+    
+
+  </form>
+
+  <div id="elementContainer">
+    <!-- Dynamic elements will be added here -->
+  </div>
+
+  <script src="Assignment5question2.js"></script>
+
+</body>
+</html>
