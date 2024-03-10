@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Page</title>
+</head>
+<body>
+  <h1>Welcome to the Interactive Page</h1>
+  <form id="myForm">
+    <label for="inputText">Enter Text:</label>
+    <input type="text" id="inputText" placeholder="Type here...">
+    <button type="button" onclick="alterPage()">Alter Page</button>
+  </form>
+  <p id="instruction">Type something in the input field and click the "Alter Page" button to see changes!</p>
+  <script>
+   
+    function getRandomColor(){
+        let colours = ["red","green","purple","blue","orange"];
+
+        return colours[Math.floor(Math.random()*colours.length)]
+    }
+    function alterPage() {
+      // Your task is to implement this function
+      // Use JavaScript to alter the webpage in the following ways:
+      // 1. Change the heading text to "Hello, [inputValue]!", where [inputValue] is the value entered in the input field.
+      // 2. Change the instruction text to "You entered: [inputValue]".
+      // 3. Change the background color of the body to a random color.
+      // Hint: You can use document.getElementById and document.querySelector to select and modify HTML elements.
+    
+      //Get input tect 
+      let input = document.getElementById('inputText').value; //Without .value we wontget contents
+        //Change contents of H1
+      document.querySelector('h1').innerText = "Hello, " +input+"!";
+
+      //Change the instruction text 
+
+      document.getElementById("instruction").innerText = "You entered: "+input
+
+      //Array of random colours 
+      
+
+      //Making the background a random colour
+
+      document.body.style.backgroundColor = getRandomColor();
+
+    
+    }
+  </script>
+</body>
+</html>
