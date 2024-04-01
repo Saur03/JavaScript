@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background Color Changer</title>
+<style>
+body {
+text-align: center;
+padding-top: 50px;
+font-family: Arial, sans-serif;
+}
+#colorDisplay {
+font-size: 24px;
+}
+#colorBtn {
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+}
+.rgbInput {
+width: 60px;
+margin: 5px;
+}
+</style>
+</head>
+<body>
+<h1>Background Color Changer</h1>
+<p>Current background color: <span id="colorDisplay">Initial color</span></p>
+<p>Enter RGB values:</p>
+<input type="number" id="redInput" class="rgbInput" min="0" max="255" placeholder="Red">
+<input type="number" id="greenInput" class="rgbInput" min="0" max="255" placeholder="Green">
+<input type="number" id="blueInput" class="rgbInput" min="0" max="255" placeholder="Blue">
+<button id="colorBtn">Change Color</button>
+<script src="Assignment6question2.js"></script>
+</body>
+</html>
