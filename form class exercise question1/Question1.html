@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form with Local Storage</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+padding: 20px;
+}
+label {
+display: block;
+margin-bottom: 10px;
+}
+select, input[type="radio"] {
+margin-bottom: 10px;
+}
+#submit-btn {
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+}
+</style>
+</head>
+<body>
+<h2>Form with Local Storage</h2>
+<form id="user-form">
+<label for="name">Name:</label>
+<input type="text" id="name" required>
+<!--This is not a good way to  do this, we should use a form group-->
+<label for="gender">Gender:</label>
+<input type="radio" name="gender" value="male" id="gender-male" required>
+<label for="gender-male">Male</label>
+<input type="radio" name="gender" value="female" id="gender-female"required>
+<label for="gender-female">Female</label>
+<input type="radio" name="gender" value="Other" id="gender-other" required>
+<label for="gender-Other">Other</label>
+
+<label for="country">Country:</label>
+<select id="country" required>
+<option value="" disabled selected>Select Country</option>
+<option value="usa">USA</option>
+<option value="canada">Canada</option>
+<option value="uk">UK</option>
+<option value="australia">Australia</option>
+</select>
+<button type="submit" id="submit-btn">Submit</button>
+</form>
+<script src="Question1.js"> </script>
+
+</body>
+
+</html>
+
+
+
