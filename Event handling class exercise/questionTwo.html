@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Information Form</title>
+<style>
+    body {
+        text-align: center;
+        padding-top: 50px;
+        font-family: Arial, sans-serif;
+    }
+    .inputField {
+        width: 300px;
+        padding: 10px;
+        margin: 10px;
+        font-size: 16px;
+    }
+    #submitBtn {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    #outputDisplay {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .helperMessage {
+        font-size: 14px;
+        color: #777;
+    }
+</style>
+</head>
+<body>
+<h1>Personal Information Form</h1>
+<form id="infoForm">
+    <input type="text" id="firstNameInput" class="inputField" placeholder="First Name" required>
+    <div id="firstNameHelper" class="helperMessage"></div>
+    <br>
+    <input type="text" id="lastNameInput" class="inputField" placeholder="Last Name" required>
+    <div id="lastNameHelper" class="helperMessage"></div>
+    <br>
+    <input type="email" id="emailInput" class="inputField" placeholder="Email" required>
+    <div id="emailHelper" class="helperMessage"></div>
+    <br>
+    <input type="tel" id="phoneInput" class="inputField" placeholder="Phone Number" required>
+    <div id="phoneHelper" class="helperMessage"></div>
+    <br>
+    <button type="submit" id="submitBtn">Submit</button>
+</form>
+<div id="outputDisplay"></div>
+
+<script src="scriptofquestion2.js"></script>
+</body>
+</html>
+
